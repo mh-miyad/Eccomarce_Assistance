@@ -1,5 +1,6 @@
 "use client";
 
+import DashboardNavbar from "./DashboardNavbar";
 import DashboardSidebar from "./DashboardSidebar";
 
 interface DashboardLayoutProps {
@@ -8,10 +9,11 @@ interface DashboardLayoutProps {
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
-    <div className="flex h-[calc(100vh-4rem)]">
-      <DashboardSidebar />
-      <div className="flex-1 overflow-auto p-8">
-        {children}
+    <div className="flex flex-col h-screen">
+      <DashboardNavbar />
+      <div className="flex flex-1 overflow-hidden">
+        <DashboardSidebar />
+        <div className="flex-1 overflow-auto p-8">{children}</div>
       </div>
     </div>
   );

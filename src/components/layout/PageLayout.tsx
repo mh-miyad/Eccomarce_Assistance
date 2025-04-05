@@ -1,8 +1,8 @@
 "use client";
 
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { usePathname } from "next/navigation";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -16,7 +16,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <Navbar />
+      {!isInDashboard && <Navbar />}
       <main className="flex-1">{children}</main>
       {!isInDashboard && <Footer />}
     </div>

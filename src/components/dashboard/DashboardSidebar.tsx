@@ -1,22 +1,21 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import {
-  LayoutDashboard,
-  MessageSquare,
-  ShoppingCart,
-  RefreshCcw,
-  Package,
-  Settings,
-  Store,
-  LogOut,
-  User,
-  CreditCard,
-  HelpCircle
-} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import {
+  CreditCard,
+  HelpCircle,
+  LayoutDashboard,
+  LogOut,
+  MessageSquare,
+  Package,
+  RefreshCcw,
+  ShoppingCart,
+  Store,
+  User,
+} from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navigation = [
   {
@@ -73,7 +72,7 @@ export default function DashboardSidebar() {
   const pathname = usePathname();
 
   return (
-    <div className="w-64 border-r bg-card h-[calc(100vh-4rem)] flex flex-col">
+    <div className="w-64 border-r bg-card h-full flex flex-col">
       <div className="flex flex-col flex-1 p-4">
         <div className="space-y-1">
           {navigation.map((item) => (
@@ -107,10 +106,15 @@ export default function DashboardSidebar() {
 
         <div className="mt-auto">
           <Separator className="my-4" />
-          <Button variant="ghost" className="w-full justify-start text-muted-foreground">
-            <LogOut className="mr-2 h-4 w-4" />
-            Sign Out
-          </Button>
+          <Link href="/">
+            <Button
+              variant="ghost"
+              className="w-full justify-start text-muted-foreground"
+            >
+              <LogOut className="mr-2 h-4 w-4" />
+              Sign Out
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
