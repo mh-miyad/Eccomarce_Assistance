@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -10,6 +8,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Menu } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -48,7 +48,9 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
-                  pathname === link.href ? "text-primary" : "text-muted-foreground"
+                  pathname === link.href
+                    ? "text-primary"
+                    : "text-muted-foreground"
                 }`}
               >
                 {link.name}
@@ -60,12 +62,12 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           {!isInDashboard && (
             <>
-              <Link href="/login">
+              <Link href="/auth">
                 <Button variant="ghost" size="sm">
                   Sign In
                 </Button>
               </Link>
-              <Link href="/signup">
+              <Link href="/auth?tab=signup">
                 <Button size="sm">Start Free Trial</Button>
               </Link>
             </>
@@ -88,10 +90,10 @@ export default function Navbar() {
               {!isInDashboard && (
                 <>
                   <DropdownMenuItem asChild>
-                    <Link href="/login">Sign In</Link>
+                    <Link href="/auth">Sign In</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <Link href="/signup">Start Free Trial</Link>
+                    <Link href="/auth?tab=signup">Start Free Trial</Link>
                   </DropdownMenuItem>
                 </>
               )}

@@ -1,5 +1,6 @@
 "use client";
 
+import { Toaster } from "@/components/ui/toaster";
 import { useEffect } from "react";
 
 export default function ClientBody({
@@ -16,6 +17,7 @@ export default function ClientBody({
   return (
     <body className="antialiased" suppressHydrationWarning>
       {children}
+      <Toaster />
     </body>
   );
 }
