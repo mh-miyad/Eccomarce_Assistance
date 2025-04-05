@@ -24,42 +24,36 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 ## Key Features
 
 ### AI-Powered Chatbot
-
 - **Natural Language Processing**: Understands customer queries in natural language
 - **Context Awareness**: Maintains conversation context for more natural interactions
 - **Multi-language Support**: Communicates with customers in multiple languages
 - **24/7 Availability**: Provides round-the-clock customer support
 
 ### Order Tracking
-
 - **Real-time Updates**: Provides customers with real-time order status
 - **Shipping Integration**: Connects with major shipping carriers
 - **Proactive Notifications**: Sends updates about order status changes
 - **Order History Access**: Allows customers to view past orders
 
 ### Product Recommendations
-
 - **Personalized Suggestions**: Recommends products based on browsing history
 - **Cross-selling Capabilities**: Suggests complementary products
 - **Trending Items**: Highlights popular products in the store
 - **Seasonal Recommendations**: Adjusts suggestions based on seasons or promotions
 
 ### Returns & Refunds Management
-
 - **Automated Return Process**: Guides customers through the return process
 - **Return Policy Enforcement**: Applies business rules automatically
 - **Refund Status Tracking**: Keeps customers informed about refund status
 - **Return Analytics**: Provides insights on return reasons and patterns
 
 ### Analytics Dashboard
-
 - **Performance Metrics**: Tracks chatbot usage and effectiveness
 - **Customer Satisfaction**: Measures customer satisfaction scores
 - **Conversation Analytics**: Analyzes common queries and resolution rates
 - **ROI Calculation**: Helps businesses understand the value of the chatbot
 
 ### Integration Capabilities
-
 - **E-commerce Platform Connectors**: Integrates with Shopify, WooCommerce, Magento, etc.
 - **CRM Integration**: Connects with popular CRM systems
 - **Payment Gateway Support**: Works with major payment processors
@@ -70,7 +64,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 ### Public Pages
 
 #### Home Page (`/`)
-
 - **Hero Section**: Compelling value proposition with animated illustrations
 - **Features Showcase**: Interactive display of key features with visual examples
 - **Benefits Section**: Highlights ROI and business impact
@@ -80,7 +73,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 - **Call-to-Action**: Prominent buttons for free trial and demo
 
 #### Pricing Page (`/pricing`)
-
 - **Plan Comparison**: Side-by-side comparison of different pricing tiers
 - **Feature Matrix**: Detailed breakdown of features available in each plan
 - **Monthly/Annual Toggle**: Option to switch between billing cycles with discount for annual
@@ -90,7 +82,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 - **Call-to-Action**: Buttons to start free trial for each plan
 
 #### Demo Page (`/demo`)
-
 - **Interactive Chatbot Demo**: Live demonstration of the chatbot functionality
 - **Scenario Selection**: Pre-configured scenarios to showcase different features
 - **Customization Preview**: Shows how the chatbot can be customized
@@ -100,7 +91,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 - **Call-to-Action**: Option to sign up after experiencing the demo
 
 #### Authentication Page (`/auth`)
-
 - **Combined Interface**: Single page with tabs for sign-in and sign-up
 - **Social Login Options**: Integration with Google, Facebook, and other providers
 - **Password Recovery**: Secure password reset functionality
@@ -112,7 +102,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 ### Dashboard Pages
 
 #### Main Dashboard (`/dashboard`)
-
 - **Overview Cards**: Key metrics at a glance (conversations, resolution rate, etc.)
 - **Activity Timeline**: Recent chatbot interactions and system events
 - **Performance Graphs**: Visual representation of chatbot performance over time
@@ -122,7 +111,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 - **Recent Updates**: Latest features and improvements
 
 #### FAQ Settings (`/dashboard/faq`)
-
 - **FAQ Library**: Comprehensive list of pre-configured questions and answers
 - **Category Management**: Organize FAQs into logical categories
 - **Bulk Import/Export**: Tools to manage FAQs in bulk
@@ -132,7 +120,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 - **A/B Testing**: Test different answers to optimize responses
 
 #### Order Tracking (`/dashboard/order-tracking`)
-
 - **Tracking Configuration**: Set up how order tracking works
 - **Notification Templates**: Customize order status notifications
 - **Shipping Integration**: Connect with shipping providers
@@ -142,7 +129,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 - **Exception Handling**: Set up processes for delayed or problematic orders
 
 #### Returns & Refunds (`/dashboard/returns`)
-
 - **Returns Policy Builder**: Create and manage return policies
 - **Return Request Management**: View and process return requests
 - **Refund Processing**: Handle refunds through integrated payment systems
@@ -152,7 +138,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 - **Return Labels**: Generate and send return shipping labels
 
 #### Product Recommendations (`/dashboard/recommendations`)
-
 - **Algorithm Settings**: Configure how products are recommended
 - **Product Catalog Integration**: Connect with product inventory
 - **Recommendation Rules**: Create custom rules for suggestions
@@ -162,7 +147,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 - **Customer Segment Targeting**: Tailor recommendations to customer groups
 
 #### Account Settings (`/dashboard/account`)
-
 - **Profile Management**: Update business and personal information
 - **User Management**: Add and manage team members with different roles
 - **Security Settings**: Password policies and two-factor authentication
@@ -172,7 +156,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 - **Account Deletion**: Process for closing the account
 
 #### Subscription Management (`/dashboard/subscription`)
-
 - **Plan Details**: Current subscription information
 - **Usage Metrics**: Track usage against plan limits
 - **Upgrade/Downgrade Options**: Change subscription tier
@@ -186,7 +169,6 @@ ChatCommerce transforms how e-commerce businesses handle customer interactions b
 The application implements a comprehensive authentication and authorization system:
 
 ### Authentication Features
-
 - **Secure Login**: Password hashing and secure session management
 - **Remember Me Functionality**: Option to stay logged in
 - **Account Lockout**: Protection against brute force attacks
@@ -195,7 +177,6 @@ The application implements a comprehensive authentication and authorization syst
 - **Login Audit**: Tracking of login attempts and locations
 
 ### User Management
-
 - **Role-based Access Control**: Different permission levels (Admin, Manager, Viewer)
 - **Team Collaboration**: Multiple users per account with different permissions
 - **User Provisioning**: Process for adding and removing users
@@ -205,7 +186,6 @@ The application implements a comprehensive authentication and authorization syst
 ## Tech Stack & Architecture
 
 ### Frontend
-
 - **Framework**: Next.js 14 with App Router for server components and routing
 - **State Management**: React Context API and hooks for local state
 - **Styling**: Tailwind CSS with custom theme configuration
@@ -215,7 +195,6 @@ The application implements a comprehensive authentication and authorization syst
 - **Form Handling**: React Hook Form with Zod validation
 
 ### Backend (Simulated for Demo)
-
 - **API Routes**: Next.js API routes for backend functionality
 - **Authentication**: JWT-based authentication flow
 - **Data Storage**: Simulated database interactions
@@ -223,7 +202,6 @@ The application implements a comprehensive authentication and authorization syst
 - **Error Handling**: Comprehensive error boundary implementation
 
 ### Development Tools
-
 - **TypeScript**: Strong typing throughout the application
 - **ESLint**: Code quality and consistency enforcement
 - **Prettier**: Code formatting standardization
@@ -235,7 +213,6 @@ The application implements a comprehensive authentication and authorization syst
 The application uses a comprehensive set of UI components:
 
 ### Core Components
-
 - **Button**: Multiple variants (primary, secondary, outline, ghost)
 - **Input**: Text inputs with validation states
 - **Card**: Content containers with header, body, and footer
@@ -247,7 +224,6 @@ The application uses a comprehensive set of UI components:
 - **Form**: Form components with validation integration
 
 ### Dashboard-specific Components
-
 - **DataTable**: Interactive tables with sorting and filtering
 - **Charts**: Various chart types for data visualization
 - **Calendar**: Date selection and event display
@@ -259,20 +235,16 @@ The application uses a comprehensive set of UI components:
 ## Getting Started
 
 ### Prerequisites
-
 - Node.js 18.0 or higher
 - npm or yarn package manager
 
 ### Installation
-
 1. Clone the repository
-
    ```
    git clone https://github.com/yourusername/chatcommerce.git
    ```
 
 2. Install dependencies
-
    ```
    npm install
    # or
@@ -280,7 +252,6 @@ The application uses a comprehensive set of UI components:
    ```
 
 3. Run the development server
-
    ```
    npm run dev
    # or
@@ -290,9 +261,7 @@ The application uses a comprehensive set of UI components:
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ### Environment Setup
-
 Create a `.env.local` file with the following variables:
-
 ```
 NEXT_PUBLIC_API_URL=your_api_url
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
@@ -351,7 +320,6 @@ src/
 ## Development Roadmap
 
 ### Current Version
-
 - Basic chatbot functionality
 - Dashboard with key metrics
 - Order tracking integration
@@ -359,7 +327,6 @@ src/
 - Product recommendations
 
 ### Upcoming Features
-
 - **AI Enhancements**: Advanced natural language processing
 - **Voice Integration**: Voice-based chatbot interactions
 - **Mobile App**: Native mobile applications for iOS and Android
@@ -376,7 +343,6 @@ The application is configured for easy deployment on Vercel:
 3. Deploy with a single click
 
 For other platforms, build the application using:
-
 ```
 npm run build
 # or
